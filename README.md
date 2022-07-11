@@ -1,2 +1,2 @@
 # simple-clock
- Simple Clock
+ Simple Clock demo
