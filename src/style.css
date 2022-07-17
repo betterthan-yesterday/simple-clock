@@ -34,7 +34,16 @@ button {
 .wrapper {
     display: grid;
     justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
+
+.dot {
+    z-index: 3;
+    grid-row: 1;
+    grid-column: 1;
+}
+
 #clock-face {
     margin: 0 auto;
     grid-row: 1;
@@ -57,7 +66,7 @@ button {
 }
 
 #sec-hand {
-    z-index: 2;
+    z-index: 4;
     grid-column: 1;
     grid-row: 1;
     transition: 1s;
@@ -65,14 +74,19 @@ button {
 }
 
 #min-hand {
-    z-index: 1;
+    z-index: 2;
     grid-column: 1;
     grid-row: 1;
+    transition: 1s;
+    transform: rotate(0deg);
 }
 
 #hour-hand {
+    z-index: 1;
     grid-column: 1;
     grid-row: 1;
+    transition: 1s;
+    transform: rotate(0deg);
 }
 
 #sec-hand:hover {
