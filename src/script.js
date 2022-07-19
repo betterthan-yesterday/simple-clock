@@ -18,16 +18,16 @@ function updateSec(image) {
 
 function updateMin(image) {
     let date = new Date(Date.now());
-    let angle = date.getMinutes() * 6 + date.getSeconds() / 60;
-   
+    let angle = date.getMinutes() * 6 + date.getSeconds() / 10;
+
     image.setAttribute("style", "transform: rotate(" + angle + "deg)");
     setTimeout(() => updateMin(image), 1000);
 }
 
 function updateHour(image) {
     let date = new Date(Date.now());
-    let angle = date.getHours() * 6 + date.getMinutes() / 60 + date.getSeconds() / 3600;
-   
+    let angle = date.getHours() % 12 * 30 + date.getMinutes() / 2 + date.getSeconds() / 120;
+
     image.setAttribute("style", "transform: rotate(" + angle + "deg)");
     setTimeout(() => updateHour(image), 1000);
 }
