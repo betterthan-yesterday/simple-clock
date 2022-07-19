@@ -1,3 +1,9 @@
+* {
+    font-family: Verdana;
+    background-color: yellow;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -42,6 +48,7 @@ button {
     z-index: 3;
     grid-row: 1;
     grid-column: 1;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #clock-face {
@@ -59,6 +66,8 @@ button {
     align-items: end;
     align-content: center;
     bottom: 150px;
+    background-color: rgba(0, 0, 0, 0);
+
 }
 
 .hands>* {
